@@ -1,0 +1,71 @@
+blockquote {
+    color: blue;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li:nth-child(even) {
+    font-size: 20px;
+}
+
+ul li:nth-child(odd) {
+    font-size: 18px;
+}
+
+ul li:nth-child(3n+1) {
+    background-color: yellow;
+}
+
+ul li::before {
+    content: "-"
+}
+
+ul li:hover {
+    border: 2px solid crimson;
+}
+
+img {
+    width: 20vmax
+}
+
+/* .googleText {
+    font-size: 32px;
+    color: darkorange;
+    display: block;
+}
+ */
+/* .outOfImg{
+    font-size: 40px;
+    color: brown;
+    display: none;
+}
+img:hover+.outOfImg{
+    display: block; 
+}img:hover+.outOfImg+.googleText{
+    display: none; 
+} */
+
+/*--------------------- Second attempt -----------------------------*/
+
+.first {
+    color: green;
+}
+.outOfImg::before{
+    content: 'CHOOSE A GOOGLE PLEASE!!!';
+    font-size: 40px;
+    color: darkorange;
+
+}
+img:hover + .outOfImg::before{
+    content: 'GO AWAY!!!';
+    font-size: 40px;
+    color: blue;
+}
+
+/* ------------------------------------------------------------------- */
